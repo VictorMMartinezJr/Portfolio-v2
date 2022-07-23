@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: #6867ac;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
