@@ -11,6 +11,7 @@
   align-items: center;
   padding: 0 1rem;
   position: relative;
+  color: var(--white);
 }
 /**** Logo & Name ****/
 .navbar-name {
@@ -28,9 +29,7 @@
   cursor: pointer;
 }
 .burger-line {
-  position: relative; /* so z-index works */
-  z-index: 2;
-  background-color: black;
+  background-color: var(--white);
   height: 3px;
   width: 25px;
   margin: 5px 0;
@@ -61,22 +60,22 @@
   display: flex;
   flex-direction: column;
   align-items: end;
+  background-color: #501887;
+  z-index: 2;
 }
 .nav-link {
   list-style: none;
   padding: 0.5rem 0.8rem;
   font-weight: 600;
   cursor: pointer;
-  margin: 0.5rem 0.5rem 0.5rem 0;
+  margin: 0.5rem;
+}
+.contact-link {
+  margin-bottom: 1rem;
 }
 .navbar-links.active {
   opacity: 1;
   pointer-events: all;
-}
-.contact-link {
-  background-color: #00c32a;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #00c32a;
 }
 /**** Media Queries ****/
 @media screen and (min-width: 375px) {
@@ -106,22 +105,14 @@
     flex-direction: row;
     width: auto;
     pointer-events: all;
+    background-color: transparent;
   }
   .nav-link {
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
   }
-  .link-margin {
-    margin: 0rem 0.5rem;
-  }
   .contact-link {
-    background-color: #00c32a;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #00c32a;
-  }
-  .contact-link:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1536px) {

@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Space";
+  src: url(../../../../assets/ethnocentric\ rg\ it.otf);
+}
+
+.section {
+  min-height: 90vh;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.hero {
+  overflow: hidden;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--white);
+}
+.title {
+  font-size: 1.5rem;
+  font-family: "Space", sans-serif;
+}
+.subtitle {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+.contact-hero {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  color: var(--white);
+}
+.planet {
+  animation: float 2s ease-in-out infinite;
+  -webkit-animation: float 3s ease-in-out infinite; /* QQ Browser */
+  position: absolute;
+}
+.planet-green {
+  filter: drop-shadow(0 0 20px #00c32a);
+  right: -30px;
+  bottom: 60%;
+}
+.planet-earth {
+  filter: drop-shadow(0 0 20px #2416e2);
+  left: -80px;
+  bottom: 40%;
+}
+.planet-purple {
+  filter: drop-shadow(0 0 20px #f4317c);
+  right: -80px;
+  bottom: 15%;
+  z-index: 2;
+}
+.planet-orange {
+  position: absolute;
+  filter: drop-shadow(0 0 20px #c43906);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15%;
+}
+.alien-ship {
+  position: absolute;
+  left: -50px;
+  animation: glide 5s ease-in-out 1;
+  -webkit-animation: glide 5s ease-in-out 1; /* QQ Browser */
+}
+.hero-astronaut {
+  position: absolute;
+  bottom: 70px;
+}
+.star {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  box-shadow: 0 0 10px var(--white);
+  animation: twinkle 3s ease-in-out infinite;
+  -webkit-animation: twinkle 3s ease-in-out infinite; /* QQ Browser */
+}
+.star1 {
+  top: 10%;
+  left: 10%;
+}
+.star2 {
+  top: 30%;
+  right: 30%;
+  animation-delay: 1s;
+}
+.star3 {
+  bottom: 0%;
+  left: 30%;
+  animation-delay: 2s;
+}
+.star4 {
+  bottom: 0%;
+  right: 10%;
+  animation-delay: 4s;
+}
+@keyframes twinkle {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes glide {
+  0% {
+    left: -50px;
+    transform: translateX(-100%);
+    top: 20%;
+  }
+  100% {
+    left: 100%;
+    transform: translateX(100%);
+    top: 60%;
+  }
+}
+/**** Media Queries ****/
+@media screen and (min-width: 375px) {
+  .hero-astronaut {
+    bottom: 50px;
+  }
+  .hero {
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 400px) {
+  .planet-orange {
+    height: 280px;
+  }
+  .hero-astronaut {
+    height: 250px;
+    bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 4rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .hero-p,
+  .contact-hero {
+    font-size: 1.3rem;
+  }
+  .contact-hero {
+    margin-top: 1.5rem;
+  }
+  .planet-green {
+    height: 100px;
+    right: 1rem;
+  }
+  .planet-earth {
+    left: 1rem;
+  }
+  .planet-purple {
+    height: 150px;
+    right: 1rem;
+  }
+  .alien-ship {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .planet-green {
+    height: 150px;
+    right: 2rem;
+  }
+  .planet-earth {
+    left: 2rem;
+    height: 180px;
+  }
+  .planet-purple {
+    height: 200px;
+    right: 2rem;
+  }
+  .alien-ship {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 2.5rem;
+  }
+  .hero-p,
+  .contact-hero {
+    font-size: 1.5rem;
+  }
+  .planet-green {
+    right: 25%;
+  }
+  .planet-earth {
+    left: 10%;
+    height: 200px;
+  }
+  .planet-purple {
+    height: 300px;
+    right: 2rem;
+  }
+  .alien-ship {
+    height: 50px;
+  }
+}

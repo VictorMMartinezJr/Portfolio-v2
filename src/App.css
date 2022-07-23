@@ -1,3 +1,7 @@
+:root {
+  --bg-dark-color: #000;
+  --white: #f2f2f2;
+}
 *,
 *::before,
 *::after {
@@ -7,8 +11,18 @@
 }
 
 .app {
-  background-color: #6867ac;
+  background: linear-gradient(to bottom, #501887, #101730);
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+.contact-btn {
+  background-color: #00c32a;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00c32a;
+  margin: 0.5rem 0;
+}
+.contact-btn:hover {
+  box-shadow: 0 0 30px #00c32a;
+  transition: all 0.2s ease-in-out;
 }
