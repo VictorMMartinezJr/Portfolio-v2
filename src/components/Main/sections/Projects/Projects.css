@@ -1,0 +1,10 @@
+#projects-section {
+  margin-top: 8rem;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}

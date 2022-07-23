@@ -2,13 +2,7 @@
   font-family: "Space";
   src: url(../../../../assets/ethnocentric\ rg\ it.otf);
 }
-
-.section {
-  min-height: 90vh;
-  font-family: "Source Sans Pro", sans-serif;
-}
 .hero {
-  overflow: hidden;
   position: relative;
   height: 90vh;
   width: 100%;

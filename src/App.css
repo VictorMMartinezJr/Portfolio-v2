@@ -11,10 +11,14 @@
 }
 
 .app {
-  background: linear-gradient(to bottom, #501887, #101730);
+  background: linear-gradient(to bottom, #501887, #000000);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
 }
 .contact-btn {
   background-color: #00c32a;

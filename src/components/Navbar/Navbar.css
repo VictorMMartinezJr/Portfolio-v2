@@ -6,6 +6,7 @@
 .navbar {
   font-family: "Source Sans Pro", sans-serif;
   height: 10vh;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,6 +117,10 @@
   }
 }
 @media screen and (min-width: 1536px) {
+  .navbar {
+    padding: 0;
+    width: 70%;
+  }
   .name,
   .nav-link {
     font-size: 1.3rem;

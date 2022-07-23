@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Anime Attire",
+    "techStack": ["HTML", "CSS", "JavaScript", "React"],
+    "description": "A web app built with ReactJs for an anime store. With the power of the Context API + useReducer hook, users can view, search, sort, and add/remove items from their cart.",
+    "img": "assets/project-assets/anime-attire.png",
+    "alt": "desktop and iPhone next to each other with the Anime Attire webpage open",
+    "liveSite": "https://anime-attire.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Anime-Shoppe"
+  },
+  {
+    "id": 2,
+    "title": "StreamVic",
+    "techStack": ["HTML", "CSS", "JavaScript", "React", "Rest API"],
+    "description": "A web app built with ReactJs that allows users to browse movie/tv show information and save their favorites. I used the TMDB API to fetch movie/tvshow data and output content dynamically to the webpage. Users can use the API to also search for a particular movie/tv show.",
+    "img": "assets/project-assets/streamvic.png",
+    "alt": "desktop and iPhone next to each other with the StreamVic webpage open",
+    "liveSite": "https://streamvic.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/streamvic"
+  },
+  {
+    "id": 3,
+    "title": "Chit Chat",
+    "techStack": ["MongoDB", "Express", "React", "NodeJS"],
+    "description": "A web app built using the MERN stack that allows users to create/edit groupchats & single chats, send messages, search for users, and uses JWT tokens as authentication for logging in and signing up.",
+    "img": "assets/project-assets/chitchat.png",
+    "alt": "desktop on Chit Chat with chat open and an iPhone on Chit Chat with the signup page open",
+    "liveSite": "https://chit-chat-victormtzcodes.herokuapp.com/",
+    "github": "https://github.com/VictorMtzCode/MERN-Chat-App"
+  },
+  {
+    "id": 4,
+    "title": "Italian Pie",
+    "techStack": ["HTML", "CSS", "JavaScript", "GSAP", "BarbaJS"],
+    "description": "Italian Pie is a dynamic landing page with page transition and scroll animations",
+    "img": "assets/project-assets/italianpie.png",
+    "alt": "desktop and iPhone next to each other with the Italian Pie webpage open",
+    "liveSite": "https://italianpie.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Pizzeria-Landing"
+  }
+]
