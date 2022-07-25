@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "img": "assets/skills-assets/html.svg",
+    "alt": "HTML",
+    "skillName": "HTML"
+  },
+  {
+    "id": 2,
+    "img": "assets/skills-assets/css.svg",
+    "alt": "CSS",
+    "skillName": "CSS"
+  },
+  {
+    "id": 1,
+    "img": "assets/skills-assets/javaScript.svg",
+    "alt": "JavaScript",
+    "skillName": "JavaScript"
+  },
+  {
+    "id": 1,
+    "img": "assets/skills-assets/react.svg",
+    "alt": "React",
+    "skillName": "React"
+  },
+  {
+    "id": 1,
+    "img": "assets/skills-assets/tailwindcss.svg",
+    "alt": "Tailwind CSS",
+    "skillName": "Tailwind CSS"
+  },
+  {
+    "id": 1,
+    "img": "assets/skills-assets/git.svg",
+    "alt": "Git",
+    "skillName": "Git"
+  },
+  {
+    "id": 1,
+    "img": "assets/skills-assets/github.svg",
+    "alt": "GitHub",
+    "skillName": "GitHub"
+  }
+]
