@@ -18,12 +18,29 @@
 .navbar-name {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .navbar-logo {
   height: 40px;
 }
 .name {
   display: none;
+}
+.skip-link {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.skip-link:focus {
+  top: 100%;
+  opacity: 1;
+  pointer-events: all;
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--white);
+  outline: 2px solid #00c32a;
+  border-radius: 10px;
+  padding: 0.5rem;
 }
 /**** Burger Icon ****/
 .burger {
@@ -65,14 +82,22 @@
   z-index: 2;
 }
 .nav-link {
+  text-decoration: none;
   list-style: none;
+  color: var(--white);
   padding: 0.5rem 0.8rem;
   font-weight: 600;
   cursor: pointer;
   margin: 0.5rem;
 }
+.nav-link:focus {
+  outline: 2px solid #00c32a;
+  border-radius: 10px;
+}
 .contact-link {
   margin-bottom: 1rem;
+  border: none;
+  font-family: inherit;
 }
 .navbar-links.active {
   opacity: 1;
@@ -111,6 +136,7 @@
   .nav-link {
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
+    margin: 0;
   }
   .contact-link {
     margin-bottom: 0;

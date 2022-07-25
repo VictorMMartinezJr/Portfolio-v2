@@ -14,6 +14,13 @@ const Navbar = () => {
         <div className="navbar-name">
           <img src={Astronaut} alt="" className="navbar-logo" />
           <p className="name">VictorMtzCodes</p>
+          <a
+            href="#main-content"
+            className="skip-link"
+            aria-label="Skip to main content"
+          >
+            Skip to main content
+          </a>
         </div>
         {/****************
          ** Burger Icon **
@@ -27,18 +34,18 @@ const Navbar = () => {
          ** Links **
          ****************/}
         <ul className={`navbar-links ${navOpen ? "active" : ""}`}>
-          <li className="nav-link">
-            <a>Projects</a>
-          </li>
-          <li className="nav-link">
-            <a>About Me</a>
-          </li>
-          <li className="nav-link">
-            <a>Skills</a>
-          </li>
-          <li className="nav-link contact-link contact-btn">
-            <a>Contact</a>
-          </li>
+          <a href="#" className="nav-link">
+            <li>Projects</li>
+          </a>
+          <a href="#" className="nav-link">
+            <li>About Me</li>
+          </a>
+          <a href="#" className="nav-link">
+            <li>Skills</li>
+          </a>
+          <button className="nav-link contact-link contact-btn">
+            <li>Contact</li>
+          </button>
         </ul>
       </nav>
     </>
