@@ -18,9 +18,23 @@ const Hero = () => {
           Front-end <b>Developer</b>
         </h2>
         <p className="hero-p">Discover the secrets of a successful website</p>
-        <a href="#" className="contact-btn contact-hero">
-          Contact
-        </a>
+        {/****************
+         **  Buttons  **
+         ****************/}
+        <div className="hero-btns">
+          <a
+            href="#projects-section"
+            className="contact-btn contact-hero focus-link"
+          >
+            Continue
+          </a>
+          <a
+            href="#contact"
+            className="contact-btn contact-hero focus-link secondary-btn"
+          >
+            Contact
+          </a>
+        </div>
         {/*******************************
          ** Planets & Astronaut images **
          ******************************/}

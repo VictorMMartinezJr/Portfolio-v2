@@ -22,10 +22,15 @@
   font-size: 1.3rem;
   margin: 0.5rem 0;
 }
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 1rem;
+}
 .contact-hero {
   text-decoration: none;
   padding: 0.5rem 1rem;
-  margin-top: 1rem;
   color: var(--white);
 }
 .planet {
@@ -162,6 +167,9 @@
     font-size: 2rem;
     margin: 1rem 0;
   }
+  .hero-btns {
+    flex-direction: row;
+  }
   .hero-p,
   .contact-hero {
     font-size: 1.3rem;
@@ -203,24 +211,24 @@
 }
 @media screen and (min-width: 1536px) {
   .title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .subtitle {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .hero-p,
   .contact-hero {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .planet-green {
     right: 25%;
   }
   .planet-earth {
     left: 10%;
-    height: 200px;
+    height: 350px;
   }
   .planet-purple {
-    height: 300px;
+    height: 400px;
     right: 2rem;
   }
   .alien-ship {
