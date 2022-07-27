@@ -1,0 +1,149 @@
+#contact-section {
+  background-color: var(--main-bg);
+  position: relative;
+  overflow: hidden;
+}
+.contact-rocket {
+  display: none;
+}
+/**** Form ****/
+#contact-form {
+  color: var(--white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container {
+  flex-direction: column;
+  align-items: center;
+}
+.input-container {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0;
+  z-index: 2;
+}
+.input-label {
+  position: absolute;
+  color: var(--gray-text);
+  left: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.input-label.active {
+  transform: translateY(-40px);
+}
+.input {
+  border: none;
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0.3rem;
+  border-radius: 10px;
+}
+.input:focus {
+  outline-offset: 3px;
+}
+.message-label {
+  position: absolute;
+  color: rgb(172, 172, 172);
+  left: 0.5rem;
+  top: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+.message-label.active {
+  transform: translateY(-35px);
+}
+.contact-textarea {
+  resize: none;
+}
+.contact-btn {
+  z-index: 2;
+}
+/**** Socials ****/
+.contact-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-top: 1rem;
+  z-index: 2;
+}
+.contact-social {
+  font-size: 2rem;
+  background-color: #f4317c;
+  box-shadow: 0 0 20px #f4317c;
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+.contact-social-img {
+  height: 2rem;
+}
+/**** Media Queries ****/
+@media screen and (min-width: 500px) {
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input {
+    padding: 1rem 0 1rem 0.5rem;
+  }
+  .input-label.active {
+    transform: translateY(-50px);
+  }
+  .contact-socials {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .input-container {
+    width: 700px;
+  }
+  .contact-socials {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact-rocket {
+    display: inline-block;
+    position: absolute;
+    width: 115%;
+    right: -180px;
+    bottom: -15%;
+  }
+  /***** Rocket Animations *****/
+  #rocket {
+    transform-origin: top;
+  }
+  #rocket:hover {
+    animation: shake 0.5s infinite ease-in-out;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate3d(0px, 0px, 0) rotate(0.5deg);
+    }
+    50% {
+      transform: translate3d(0px, -10px, 0) rotate(-0.5deg);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0) rotate(0.5deg);
+    }
+  }
+}
+@media screen and (min-width: 1536px) {
+  .contact-rocket {
+    bottom: -28%;
+  }
+}
