@@ -14,7 +14,7 @@
   scroll-behavior: smooth;
 }
 
-.app {
+.App {
   background-color: var(--main-bg);
   background-size: cover;
   background-position: center;
