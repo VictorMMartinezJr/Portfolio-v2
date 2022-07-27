@@ -38,5 +38,35 @@
     "alt": "desktop and iPhone next to each other with the Italian Pie webpage open",
     "liveSite": "https://italianpie.netlify.app/",
     "github": "https://github.com/VictorMtzCode/Pizzeria-Landing"
+  },
+  {
+    "id": 5,
+    "title": "Deep Reef",
+    "techStack": ["HTML", "JavaScript", "React", "TailwindCSS"],
+    "description": "A landing page for a company investing in the stock market. I used this project to brush up on my TailwindCSS skills.",
+    "img": "assets/project-assets/deep-reef.png",
+    "alt": "desktop and iPhone next to each other with the Deep Reef webpage open",
+    "liveSite": "https://deepreef.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Deep-Reef"
+  },
+  {
+    "id": 6,
+    "title": "Cake O' Clock",
+    "techStack": ["HTML", "JavaScript", "React", "TailwindCSS"],
+    "description": "A landing page for a cupcake company. I used this project to learn how to use the React Alice Carousel.",
+    "img": "assets/project-assets/cake-o-clock.png",
+    "alt": "desktop and iPhone next to each other with the Cake O Clock webpage open",
+    "liveSite": "https://cake-o-clock.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Cake-O-Clock"
+  },
+  {
+    "id": 7,
+    "title": "ZA Sport",
+    "techStack": ["HTML", "JavaScript", "React", "TailwindCSS"],
+    "description": "A landing page for a gym. This was the first project I built with TailwindCSS. I also used this project to get more comfortable with CSS Grid layouts in the gallery section",
+    "img": "assets/project-assets/za-sport.png",
+    "alt": "desktop and iPhone next to each other with the ZA Sport webpage open",
+    "liveSite": "https://zasport.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Fitness-Landing-Page"
   }
 ]

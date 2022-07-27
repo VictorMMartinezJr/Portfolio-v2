@@ -28,11 +28,6 @@
   margin-top: 1rem;
   gap: 1rem;
 }
-.contact-hero {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  color: var(--white);
-}
 .planet {
   animation: float 2s ease-in-out infinite;
   -webkit-animation: float 3s ease-in-out infinite; /* QQ Browser */
@@ -170,12 +165,8 @@
   .hero-btns {
     flex-direction: row;
   }
-  .hero-p,
-  .contact-hero {
+  .hero-p {
     font-size: 1.3rem;
-  }
-  .contact-hero {
-    margin-top: 1.5rem;
   }
   .planet-green {
     height: 100px;
@@ -216,8 +207,7 @@
   .subtitle {
     font-size: 3rem;
   }
-  .hero-p,
-  .contact-hero {
+  .hero-p {
     font-size: 2rem;
   }
   .planet-green {

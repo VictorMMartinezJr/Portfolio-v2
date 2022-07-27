@@ -4,7 +4,6 @@ import planetEarth from "../../../../assets/planet-earth.svg";
 import planetPurple from "../../../../assets/planet-purple.svg";
 import planetOrange from "../../../../assets/planet-orange.svg";
 import sittingAstronaut from "../../../../assets/astronaut-sitting.svg";
-import alienShip from "../../../../assets/alien-ship.svg";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -47,7 +46,7 @@ const Hero = () => {
     gsap.fromTo(
       heroBtns.current,
       { opacity: 0, y: -20 },
-      { opacity: 1, y: 0, duration: 1, delay: 0.4 }
+      { opacity: 1, y: 0, duration: 1, delay: 0.5 }
     );
   }, []);
   return (
@@ -67,16 +66,10 @@ const Hero = () => {
          **  Buttons  **
          ****************/}
         <div className="hero-btns" ref={heroBtns}>
-          <a
-            href="#projects-section"
-            className="contact-btn contact-hero focus-link"
-          >
+          <a href="#projects-section" className="main-btn focus-link">
             Continue
           </a>
-          <a
-            href="#contact"
-            className="contact-btn contact-hero focus-link secondary-btn"
-          >
+          <a href="#contact" className="main-btn focus-link secondary-btn">
             Contact
           </a>
         </div>
@@ -100,7 +93,6 @@ const Hero = () => {
         />
         <img src={planetOrange} alt="Orange planet" className="planet-orange" />
         <img src={sittingAstronaut} alt="" className="hero-astronaut" />
-        <img src={alienShip} alt="" className="alien-ship" />
         {/****************
          **    Stars    **
          ****************/}

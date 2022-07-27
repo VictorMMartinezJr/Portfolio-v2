@@ -1,17 +1,16 @@
 .project-card {
-  border: 2px solid gray;
-  box-shadow: 0 0 10px gray;
-  width: 90%;
   min-height: 400px;
   border-radius: 10px;
   margin-top: 1rem;
-  color: var(--white);
-  display: flex;
+  color: #8b979a;
   flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
   padding: 1rem;
 }
 .project-card-title {
   font-size: 1.5rem;
+  font-weight: 700;
 }
 .tech-stack {
   margin: 1rem 0;
@@ -22,9 +21,10 @@
 .tech {
   margin: 1rem 1rem 0 0;
   padding: 0.2rem 0.5rem;
-  outline: 2px solid #f4317c;
+  background-color: #f4317c;
   box-shadow: 0 0 10px #f4317c;
   border-radius: 5px;
+  color: #f2f2f2;
 }
 .project-description {
   margin-bottom: 1rem;
@@ -39,40 +39,22 @@
   margin: 0 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--white);
+  color: var(--gray-text);
 }
 /**** Media Queries ****/
 @media screen and (min-width: 768px) {
+  .project-card {
+    width: 300px;
+    min-height: 550px;
+  }
   .tech-stack {
     margin: 0 0 1rem 0;
   }
-  .project-card-img {
-    width: 400px;
-    align-self: center;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .project-card {
-    flex-direction: row;
-    position: relative;
-  }
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-  }
   .project-description {
-    width: 90%;
+    min-height: 180px;
   }
-  .project-links {
-    position: absolute;
-    right: 1rem;
-    bottom: 0.5rem;
-  }
-}
-@media screen and (min-width: 1536px) {
-  .project-card {
-    width: 70%;
+  .project-card-img {
+    width: 250px;
+    align-self: center;
   }
 }

@@ -1,5 +1,4 @@
 #skills-section {
-  background-color: #501887;
   min-height: auto;
   position: relative;
 }
@@ -76,10 +75,8 @@
   }
   .skills-astronaut {
     position: absolute;
-    height: 600px;
-    left: 0;
-    bottom: -210px;
+    height: 580px;
+    left: 10%;
+    bottom: -195px;
   }
-}
-@media screen and (min-width: 1536px) {
 }

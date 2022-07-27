@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Astronaut from "../../assets/nav-astronaut.svg";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -7,16 +6,23 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar container">
         {/****************
          ** Logo & Name **
          ****************/}
         <div className="navbar-name">
-          <img src={Astronaut} alt="" className="navbar-logo" />
+          <img
+            src="./assets/nav-astronaut.svg"
+            alt="Astronaut working on a computer"
+            className="navbar-logo"
+          />
           <p className="name">VictorMtzCodes</p>
+          {/****************
+           ** Hidden Link **
+           ****************/}
           <a
             href="#main-content"
-            className="skip-link"
+            className="skip-link focus-link"
             aria-label="Skip to main content"
           >
             Skip to main content
@@ -31,21 +37,21 @@ const Navbar = () => {
           <div className={`burger-line line3 ${navOpen ? "active" : ""}`}></div>
         </div>
         {/****************
-         ** Links **
+         **    Links    **
          ****************/}
         <ul className={`navbar-links ${navOpen ? "active" : ""}`}>
-          <a href="#" className="nav-link">
+          <a href="#projects-section" className="nav-link focus-link">
             <li>Projects</li>
           </a>
-          <a href="#" className="nav-link">
+          <a href="#" className="nav-link focus-link">
             <li>About Me</li>
           </a>
-          <a href="#" className="nav-link">
+          <a href="#" className="nav-link focus-link">
             <li>Skills</li>
           </a>
-          <button className="nav-link contact-link contact-btn">
+          <a className="nav-link contact-link main-btn focus-link">
             <li>Contact</li>
-          </button>
+          </a>
         </ul>
       </nav>
     </>

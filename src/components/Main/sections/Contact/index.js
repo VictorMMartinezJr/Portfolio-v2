@@ -13,7 +13,13 @@ const Contact = () => {
       {/****************
        **     Form    **
        ****************/}
-      <form action="" id="contact-form" className="container">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        id="contact-form"
+        className="container"
+      >
         {/****************
          ** Email Input **
          ****************/}
@@ -27,6 +33,7 @@ const Contact = () => {
           <input
             type="email"
             id="email"
+            name="email"
             className="input focus-link"
             onFocus={() => setEmailFocused(true)}
             onBlur={() => setEmailFocused(false)}
@@ -45,6 +52,7 @@ const Contact = () => {
           <input
             type="text"
             id="name"
+            name="name"
             className="input focus-link"
             onFocus={() => setNameFocused(true)}
             onBlur={() => setNameFocused(false)}
@@ -63,6 +71,7 @@ const Contact = () => {
           <textarea
             type="text"
             id="message"
+            name="message"
             className="input contact-textarea focus-link"
             rows={10}
             onFocus={() => setMessageFocused(true)}

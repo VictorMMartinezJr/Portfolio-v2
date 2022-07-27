@@ -1,6 +1,9 @@
 :root {
-  --bg-dark-color: #000;
+  --main-bg: #2b2451;
+  --white-bg: #eef2ff;
+  --black: #100f0f;
   --white: #f2f2f2;
+  --gray-text: #8b979a;
 }
 *,
 *::before,
@@ -8,10 +11,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .app {
-  background: linear-gradient(to bottom, #501887, #000000);
+  background-color: var(--main-bg);
   background-size: cover;
   background-position: center;
   height: auto;
@@ -19,14 +23,4 @@
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-}
-.contact-btn {
-  background-color: #00c32a;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #00c32a;
-  margin: 0.5rem 0;
-}
-.contact-btn:hover {
-  box-shadow: 0 0 30px #00c32a;
-  transition: all 0.2s ease-in-out;
 }

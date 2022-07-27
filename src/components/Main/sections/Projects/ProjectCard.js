@@ -20,10 +20,20 @@ const ProjectCard = ({ title, techStack, info, image, alt, live, github }) => {
       </div>
       <img src={image} alt={alt} className="project-card-img" />
       <div className="project-links">
-        <a href={live} className="project-link">
+        <a
+          href={live}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-link"
+        >
           <FiExternalLink />
         </a>
-        <a href={github} className="project-link">
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-link"
+        >
           <AiFillGithub />
         </a>
       </div>
