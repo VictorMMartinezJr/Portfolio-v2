@@ -6,6 +6,33 @@ const Contact = () => {
   const [emailFocused, setEmailFocused] = useState(false);
   const [nameFocused, setNameFocused] = useState(false);
   const [messageFocused, setMessageFocused] = useState(false);
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        name: name,
+        email: email,
+        message: message,
+      }),
+    })
+      .then(() => console.log("Form submission successful."))
+      .catch((error) => console.log("There was an error submitting form."));
+  };
 
   return (
     <section className="section" id="contact-section">
@@ -14,12 +41,15 @@ const Contact = () => {
        **     Form    **
        ****************/}
       <form
+        action="/contact"
         name="contact"
-        method="POST"
+        method="post"
         data-netlify="true"
         id="contact-form"
         className="container"
       >
+        <input type="hidden" name="form-name" value="contact" />
+
         {/****************
          ** Email Input **
          ****************/}
@@ -34,9 +64,11 @@ const Contact = () => {
             type="email"
             id="email"
             name="email"
+            value={email}
             className="input focus-link"
             onFocus={() => setEmailFocused(true)}
             onBlur={() => setEmailFocused(false)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         {/****************
@@ -53,9 +85,11 @@ const Contact = () => {
             type="text"
             id="name"
             name="name"
+            value={name}
             className="input focus-link"
             onFocus={() => setNameFocused(true)}
             onBlur={() => setNameFocused(false)}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         {/******************
@@ -72,13 +106,21 @@ const Contact = () => {
             type="text"
             id="message"
             name="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             className="input contact-textarea focus-link"
             rows={10}
             onFocus={() => setMessageFocused(true)}
             onBlur={() => setMessageFocused(false)}
           ></textarea>
         </div>
-        <button className="contact-btn main-btn">Submit</button>
+        <button
+          className="contact-btn main-btn"
+          type="submit"
+          onClick={(e) => handleSubmit(e)}
+        >
+          Submit
+        </button>
       </form>
       <div className="contact-socials">
         <a

@@ -1,4 +1,4 @@
-import "./Main.css";
+import "./main.css";
 import Contact from "./sections/Contact";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
