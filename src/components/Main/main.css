@@ -19,9 +19,9 @@
   padding: 1rem;
 }
 .main-btn {
-  background-color: #f4317c;
+  background-color: var(--pink);
   border-radius: 10px;
-  box-shadow: 0 0 20px #f4317c;
+  box-shadow: 0 0 20px var(--pink);
   text-decoration: none;
   padding: 0.5rem 1rem;
   color: var(--white);
@@ -32,17 +32,17 @@
   cursor: pointer;
 }
 .secondary-btn {
-  border: 2px solid #f4317c;
+  border: 2px solid var(--pink);
   box-shadow: none;
   background-color: transparent;
   margin: 0;
 }
 .main-btn:hover {
-  box-shadow: 0 0 30px #f4317c;
+  box-shadow: 0 0 30px var(--pink);
   transition: all 0.2s ease-in-out;
 }
 .focus-link:focus {
-  outline: 2px solid #f4317c;
+  outline: 2px solid var(--pink);
   border-radius: 10px;
 }
 /**** Media Queries ****/

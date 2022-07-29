@@ -38,7 +38,7 @@
   white-space: nowrap;
   text-decoration: none;
   color: var(--white);
-  outline: 2px solid #f4317c;
+  outline: 2px solid var(--pink);
 
   border-radius: 10px;
   padding: 0.5rem;

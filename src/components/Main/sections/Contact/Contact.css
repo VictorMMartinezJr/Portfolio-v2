@@ -2,6 +2,7 @@
   background-color: var(--main-bg);
   position: relative;
   overflow: hidden;
+  min-height: 70vh;
 }
 .contact-rocket {
   display: none;
@@ -70,14 +71,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  margin-top: 1rem;
+  width: 200px;
+  margin: 1rem 0;
   z-index: 2;
 }
 .contact-social {
   font-size: 2rem;
-  background-color: #f4317c;
-  box-shadow: 0 0 20px #f4317c;
+  background-color: var(--pink);
+  box-shadow: 0 0 20px var(--pink);
   color: var(--white);
   cursor: pointer;
   border-radius: 50%;
@@ -98,8 +99,9 @@
   left: 50%;
   white-space: nowrap;
   transform: translateX(-50%);
-  color: rgb(221, 20, 20);
+  color: var(--pink);
   transition: opacity 0.2s ease-in-out;
+  font-weight: 700;
 }
 .error.active {
   opacity: 1;
@@ -121,9 +123,6 @@
   .input-label.active {
     transform: translateY(-50px);
   }
-  .contact-socials {
-    width: 30%;
-  }
 }
 @media screen and (min-width: 1024px) {
   .input-container {
@@ -134,6 +133,9 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  #contact-section {
+    min-height: 90vh;
+  }
   .contact-rocket {
     display: inline-block;
     position: absolute;
