@@ -6,9 +6,42 @@ const Contact = () => {
   const [emailFocused, setEmailFocused] = useState(false);
   const [nameFocused, setNameFocused] = useState(false);
   const [messageFocused, setMessageFocused] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [nameError, setNameError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+
+  ////////////////////////////////////////////////////////////////////////////
+  // Placeholder doesn't go back inside input if value exists inside of it  //
+  ////////////////////////////////////////////////////////////////////////////
+  const valueExists = (value) => {
+    if (value !== "") {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  //////////////////////
+  // Validate email  //
+  ////////////////////
+  const validateEmail = (email) => {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
+
+  /////////////////////////////
+  // Validate text inputs  //
+  ////////////////////////////
+  const validateTextInputs = (text) => {
+    if (text === "") {
+      return false;
+    } else {
+      return true;
+    }
+  };
 
   const encode = (data) => {
     return Object.keys(data)
@@ -18,8 +51,28 @@ const Contact = () => {
       .join("&");
   };
 
+  ///////////////////////////////////
+  // Runs when form is submitted  //
+  //////////////////////////////////
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validate Email
+    if (!validateEmail(email)) {
+      setEmailError(true);
+      return;
+    }
+    // Validate Name
+    if (!validateTextInputs(name)) {
+      setNameError(true);
+      return;
+    }
+    // Validate Message
+    if (!validateTextInputs(message)) {
+      setMessageError(true);
+      return;
+    }
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -66,10 +119,24 @@ const Contact = () => {
             name="email"
             value={email}
             className="input focus-link"
-            onFocus={() => setEmailFocused(true)}
-            onBlur={() => setEmailFocused(false)}
+            onFocus={() => {
+              setEmailFocused(true);
+              if (emailError) {
+                setEmailError(false);
+              }
+            }}
+            onBlur={() => {
+              if (valueExists(email)) {
+                return;
+              } else {
+                setEmailFocused(false);
+              }
+            }}
             onChange={(e) => setEmail(e.target.value)}
           />
+          <p className={`error ${emailError ? "active" : ""}`}>
+            Email is not valid
+          </p>
         </div>
         {/****************
          ** Name Input **
@@ -87,10 +154,24 @@ const Contact = () => {
             name="name"
             value={name}
             className="input focus-link"
-            onFocus={() => setNameFocused(true)}
-            onBlur={() => setNameFocused(false)}
+            onFocus={() => {
+              setNameFocused(true);
+              if (nameError) {
+                setNameError(false);
+              }
+            }}
+            onBlur={() => {
+              if (valueExists(name)) {
+                return;
+              } else {
+                setNameFocused(false);
+              }
+            }}
             onChange={(e) => setName(e.target.value)}
           />
+          <p className={`error ${nameError ? "active" : ""}`}>
+            Name cannot be empty
+          </p>
         </div>
         {/******************
          ** Message Input **
@@ -107,12 +188,26 @@ const Contact = () => {
             id="message"
             name="message"
             value={message}
-            onChange={(e) => setMessage(e.target.value)}
             className="input contact-textarea focus-link"
             rows={10}
-            onFocus={() => setMessageFocused(true)}
-            onBlur={() => setMessageFocused(false)}
+            onFocus={() => {
+              setMessageFocused(true);
+              if (messageError) {
+                setMessageError(false);
+              }
+            }}
+            onBlur={() => {
+              if (valueExists(message)) {
+                return;
+              } else {
+                setMessageFocused(false);
+              }
+            }}
+            onChange={(e) => setMessage(e.target.value)}
           ></textarea>
+          <p className={`error ${messageError ? "active" : ""}`}>
+            Message cannot be empty
+          </p>
         </div>
         <button
           className="contact-btn main-btn"

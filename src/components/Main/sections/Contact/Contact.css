@@ -6,6 +6,9 @@
 .contact-rocket {
   display: none;
 }
+.contact-h2 {
+  color: var(--white);
+}
 /**** Form ****/
 #contact-form {
   color: var(--white);
@@ -87,6 +90,21 @@
 .contact-social-img {
   height: 2rem;
 }
+/**** Errors ****/
+.error {
+  position: absolute;
+  opacity: 0;
+  top: 100%;
+  left: 50%;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  color: rgb(221, 20, 20);
+  transition: opacity 0.2s ease-in-out;
+}
+.error.active {
+  opacity: 1;
+}
+
 /**** Media Queries ****/
 @media screen and (min-width: 500px) {
   .input-container {
