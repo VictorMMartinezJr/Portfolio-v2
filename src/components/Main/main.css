@@ -41,6 +41,10 @@
   box-shadow: 0 0 30px var(--pink);
   transition: all 0.2s ease-in-out;
 }
+.secondary-btn:hover {
+  background-color: var(--pink);
+  transition: all 0.2s ease-in-out;
+}
 .focus-link:focus {
   outline: 2px solid var(--pink);
   border-radius: 10px;

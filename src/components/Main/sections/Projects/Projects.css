@@ -3,8 +3,8 @@
   background-color: var(--white-bg);
   color: black;
   min-height: auto;
+  position: relative;
 }
-
 .projects {
   display: flex;
   justify-content: center;

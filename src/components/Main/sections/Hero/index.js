@@ -915,7 +915,7 @@ const Hero = () => {
                       id="react-logo"
                       d="M1052.55 2187.13C1088.19 2122.96 1111.95 2056.85 1118.6 2003.33C1125.26 1949.81 1114.27 1913.27 1088.04 1901.74C1061.82 1890.22 1022.51 1904.65 978.758 1941.87C935.01 1979.09 890.407 2036.05 854.76 2100.21C819.113 2164.38 795.34 2230.5 788.671 2284.03C782.003 2337.56 792.984 2374.11 819.199 2385.66C845.415 2397.2 884.718 2382.78 928.463 2345.58C972.209 2308.37 1016.82 2251.43 1052.47 2187.27L1052.55 2187.13ZM866.53 2187.27C902.185 2251.43 946.791 2308.37 990.537 2345.58C1034.28 2382.78 1073.59 2397.2 1099.8 2385.66C1126.02 2374.11 1137 2337.56 1130.33 2284.03C1123.66 2230.5 1099.89 2164.38 1064.24 2100.21C1028.59 2036.05 983.99 1979.09 940.242 1941.87C896.495 1904.65 857.185 1890.22 830.959 1901.74C804.734 1913.27 793.74 1949.81 800.397 2003.33C807.053 2056.85 830.815 2122.96 866.455 2187.13L866.53 2187.27ZM959.576 2240.89C1033.03 2240.89 1103.48 2229.56 1155.41 2209.4C1207.34 2189.24 1236.51 2161.91 1236.5 2133.41C1236.49 2104.91 1207.3 2077.58 1155.36 2057.43C1103.41 2037.27 1032.96 2025.95 959.5 2025.95C886.041 2025.95 815.59 2037.27 763.643 2057.43C711.697 2077.58 682.508 2104.91 682.498 2133.41C682.488 2161.91 711.657 2189.24 763.59 2209.4C815.523 2229.56 885.965 2240.89 959.424 2240.89H959.576Z"
                       stroke="#61DAFB"
-                      stroke-width="18"
+                      strokeWidth="18"
                     />
                   </g>
                 </g>
@@ -930,9 +930,9 @@ const Hero = () => {
               width="4282"
               height="4331"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -965,9 +965,9 @@ const Hero = () => {
               width="580.004"
               height="517.675"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -1001,12 +1001,12 @@ const Hero = () => {
               y2="3697.79"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#DB0909" />
-              <stop offset="0.21" stop-color="#E43806" />
-              <stop offset="0.47" stop-color="#F06C03" />
-              <stop offset="0.7" stop-color="#F89201" />
-              <stop offset="0.89" stop-color="#FDAA00" />
-              <stop offset="1" stop-color="#FFB300" />
+              <stop stopColor="#DB0909" />
+              <stop offset="0.21" stopColor="#E43806" />
+              <stop offset="0.47" stopColor="#F06C03" />
+              <stop offset="0.7" stopColor="#F89201" />
+              <stop offset="0.89" stopColor="#FDAA00" />
+              <stop offset="1" stopColor="#FFB300" />
             </linearGradient>
           </defs>
         </svg>
