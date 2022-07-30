@@ -49,22 +49,29 @@
   bottom: 15%;
   z-index: 2;
 }
-.planet-orange {
-  position: absolute;
-  filter: drop-shadow(0 0 20px #c43906);
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -15%;
+#planet-orange {
+  filter: drop-shadow(0 0 100px #c43906);
 }
-.alien-ship {
-  position: absolute;
-  left: -50px;
-  animation: glide 5s ease-in-out 1;
-  -webkit-animation: glide 5s ease-in-out 1; /* QQ Browser */
+#react-logo {
+  filter: drop-shadow(0 0 20px #61dafb);
 }
 .hero-astronaut {
   position: absolute;
-  bottom: 70px;
+  bottom: -25%;
+}
+#js-logo {
+  animation: glow 2s ease-in-out infinite;
+}
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 20px #f5de19);
+  }
+  50% {
+    filter: drop-shadow(0 0 90px #f5de19);
+  }
+  100% {
+    filter: drop-shadow(0 0 20px #f5de19);
+  }
 }
 .star {
   height: 5px;
@@ -135,20 +142,35 @@
 }
 /**** Media Queries ****/
 @media screen and (min-width: 375px) {
-  .hero-astronaut {
-    bottom: 50px;
-  }
   .hero {
     padding-top: 2rem;
   }
-}
-@media screen and (min-width: 400px) {
-  .planet-orange {
-    height: 280px;
-  }
   .hero-astronaut {
-    height: 250px;
-    bottom: 50px;
+    height: 450px;
+    bottom: -20%;
+  }
+}
+@media screen and (min-width: 390px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  .hero-p,
+  .hero-btns {
+    font-size: 1.3rem;
+  }
+  .planet-green {
+    height: 100px;
+    right: 0;
+  }
+  .planet-earth {
+    left: -40px;
+  }
+  .planet-purple {
+    height: 150px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -169,18 +191,13 @@
     font-size: 1.3rem;
   }
   .planet-green {
-    height: 100px;
     right: 1rem;
   }
   .planet-earth {
     left: 1rem;
   }
   .planet-purple {
-    height: 150px;
     right: 1rem;
-  }
-  .alien-ship {
-    height: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -196,8 +213,35 @@
     height: 200px;
     right: 2rem;
   }
-  .alien-ship {
-    height: 50px;
+  .hero-astronaut {
+    height: 500px;
+    bottom: -15%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 2.5rem;
+  }
+  .hero-p {
+    font-size: 1.5rem;
+  }
+  .planet-green {
+    right: 20%;
+  }
+  .planet-earth {
+    left: 10%;
+    height: 300px;
+  }
+  .planet-purple {
+    height: 350px;
+    right: 2rem;
+  }
+  .hero-astronaut {
+    height: 600px;
+    bottom: -20%;
   }
 }
 @media screen and (min-width: 1536px) {
@@ -211,17 +255,12 @@
     font-size: 2rem;
   }
   .planet-green {
-    right: 25%;
+    right: 20%;
   }
   .planet-earth {
-    left: 10%;
     height: 350px;
   }
   .planet-purple {
     height: 400px;
-    right: 2rem;
-  }
-  .alien-ship {
-    height: 50px;
   }
 }

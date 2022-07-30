@@ -4,6 +4,7 @@
   color: black;
   min-height: auto;
 }
+
 .projects {
   display: flex;
   justify-content: center;
