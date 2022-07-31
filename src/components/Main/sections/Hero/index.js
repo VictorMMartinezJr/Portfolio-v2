@@ -7,7 +7,7 @@ import sittingAstronaut from "../../../../assets/astronaut-sitting.svg";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-const Hero = () => {
+const Hero = ({ reducedMotion }) => {
   {
     /*******************************
      **  Refs for load animation  **
@@ -18,12 +18,8 @@ const Hero = () => {
   let heroBtns = useRef(null);
 
   useEffect(() => {
-    const reducedMotion = // Check if user has reduced motion on
-      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
-      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
-
+    // Only play animations if user has reduced motion off
     if (!reducedMotion) {
-      // Only play animations if user has reduced motion off
       {
         /**************************
          **  Subtitle animation  **

@@ -3,7 +3,7 @@ import skillsData from "../../../data/SkillsData.json";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
-const Skills = () => {
+const Skills = ({ reducedMotion }) => {
   {
     /*******************************
      **  Refs for load animation  **
@@ -13,26 +13,29 @@ const Skills = () => {
   let headRef = useRef(null);
 
   useEffect(() => {
-    {
-      /**************************
-       **  Typing hand animation  **
-       *************************/
+    // Only play animations if user has reduced motion off
+    if (!reducedMotion) {
+      {
+        /**************************
+         **  Typing hand animation  **
+         *************************/
+      }
+      gsap.fromTo(
+        typingHandRef.current,
+        { rotation: 0, transformOrigin: "center" },
+        { rotation: 8, duration: 0.5, repeat: -1, yoyo: true }
+      );
+      {
+        /**************************
+         **  Moving head animation  **
+         *************************/
+      }
+      gsap.fromTo(
+        headRef.current,
+        { rotation: 0, transformOrigin: "center" },
+        { rotation: 8, duration: 1.5, repeat: -1, yoyo: true }
+      );
     }
-    gsap.fromTo(
-      typingHandRef.current,
-      { rotation: 0, transformOrigin: "center" },
-      { rotation: 8, duration: 0.5, repeat: -1, yoyo: true }
-    );
-    {
-      /**************************
-       **  Moving head animation  **
-       *************************/
-    }
-    gsap.fromTo(
-      headRef.current,
-      { rotation: 0, transformOrigin: "center" },
-      { rotation: 8, duration: 1.5, repeat: -1, yoyo: true }
-    );
   }, []);
   return (
     <section className="section" id="skills-section">
