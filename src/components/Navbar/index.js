@@ -40,16 +40,32 @@ const Navbar = () => {
          **    Links    **
          ****************/}
         <ul className={`navbar-links ${navOpen ? "active" : ""}`}>
-          <a href="#projects-section" className="nav-link focus-link">
+          <a
+            href="#projects-section"
+            className="nav-link focus-link"
+            onClick={() => setNavOpen(false)}
+          >
             <li>Projects</li>
           </a>
-          <a href="#" className="nav-link focus-link">
+          <a
+            href="#about-section"
+            className="nav-link focus-link"
+            onClick={() => setNavOpen(false)}
+          >
             <li>About Me</li>
           </a>
-          <a href="#" className="nav-link focus-link">
+          <a
+            href="#skills-section"
+            className="nav-link focus-link"
+            onClick={() => setNavOpen(false)}
+          >
             <li>Skills</li>
           </a>
-          <a className="nav-link contact-link main-btn focus-link">
+          <a
+            href="#contact-section"
+            className="nav-link contact-link main-btn focus-link"
+            onClick={() => setNavOpen(false)}
+          >
             <li>Contact</li>
           </a>
         </ul>
