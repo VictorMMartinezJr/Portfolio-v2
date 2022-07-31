@@ -18,37 +18,45 @@ const Hero = () => {
   let heroBtns = useRef(null);
 
   useEffect(() => {
-    {
-      /**************************
-       **  Subtitle animation  **
-       *************************/
+    const reducedMotion = // Check if user has reduced motion on
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    if (!reducedMotion) {
+      // Only play animations if user has reduced motion off
+      {
+        /**************************
+         **  Subtitle animation  **
+         *************************/
+      }
+      gsap.fromTo(
+        subtitleRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1, delay: 0.2 }
+      );
+      {
+        /**************************
+         **   P tag animation    **
+         *************************/
+      }
+      gsap.fromTo(
+        heroPRef.current,
+        { opacity: 0, y: -20 },
+        { opacity: 1, y: 0, duration: 1, delay: 0.3 }
+      );
+      {
+        /**************************
+         **  Buttons animation  **
+         *************************/
+      }
+      gsap.fromTo(
+        heroBtns.current,
+        { opacity: 0, y: -20 },
+        { opacity: 1, y: 0, duration: 1, delay: 0.5 }
+      );
     }
-    gsap.fromTo(
-      subtitleRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 1, delay: 0.2 }
-    );
-    {
-      /**************************
-       **   P tag animation    **
-       *************************/
-    }
-    gsap.fromTo(
-      heroPRef.current,
-      { opacity: 0, y: -20 },
-      { opacity: 1, y: 0, duration: 1, delay: 0.3 }
-    );
-    {
-      /**************************
-       **  Buttons animation  **
-       *************************/
-    }
-    gsap.fromTo(
-      heroBtns.current,
-      { opacity: 0, y: -20 },
-      { opacity: 1, y: 0, duration: 1, delay: 0.5 }
-    );
   }, []);
+
   return (
     <section className="section" id="hero-section">
       <div className="hero">
