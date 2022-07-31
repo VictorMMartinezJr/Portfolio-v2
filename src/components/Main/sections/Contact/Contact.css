@@ -143,22 +143,26 @@
     right: -180px;
     bottom: -15%;
   }
-  /***** Rocket Animations *****/
-  #rocket {
-    transform-origin: top;
-  }
-  #rocket:hover {
-    animation: shake 0.5s infinite ease-in-out;
-  }
-  @keyframes shake {
-    0% {
-      transform: translate3d(0px, 0px, 0) rotate(0.5deg);
+  @media (prefers-reduced-motion: no-preference) {
+    /***************
+    ** Animations **
+    ***************/
+    #rocket {
+      transform-origin: top;
     }
-    50% {
-      transform: translate3d(0px, -10px, 0) rotate(-0.5deg);
+    #rocket:hover {
+      animation: shake 0.5s infinite ease-in-out;
     }
-    100% {
-      transform: translate3d(0px, 0px, 0) rotate(0.5deg);
+    @keyframes shake {
+      0% {
+        transform: translate3d(0px, 0px, 0) rotate(0.5deg);
+      }
+      50% {
+        transform: translate3d(0px, -10px, 0) rotate(-0.5deg);
+      }
+      100% {
+        transform: translate3d(0px, 0px, 0) rotate(0.5deg);
+      }
     }
   }
 }

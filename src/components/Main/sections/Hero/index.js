@@ -2,8 +2,6 @@ import "./Hero.css";
 import planetGreen from "../../../../assets/planet-green.svg";
 import planetEarth from "../../../../assets/planet-earth.svg";
 import planetPurple from "../../../../assets/planet-purple.svg";
-import planetOrange from "../../../../assets/planet-orange.svg";
-import sittingAstronaut from "../../../../assets/astronaut-sitting.svg";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
