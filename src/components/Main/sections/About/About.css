@@ -28,14 +28,19 @@
 }
 @media screen and (min-width: 1024px) {
   .about-content {
-    width: 70%;
+    padding: 0 4rem;
   }
   .about-p {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about-img {
+    height: 400px;
+  }
+}
 @media screen and (min-width: 1536px) {
   .about-content {
-    width: 60%;
+    width: 70%;
   }
 }
