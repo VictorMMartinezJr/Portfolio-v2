@@ -18,6 +18,9 @@
   display: flex;
   padding: 1rem;
 }
+.block-of-text {
+  line-height: 1.5;
+}
 .main-btn {
   background-color: var(--pink);
   border-radius: 10px;

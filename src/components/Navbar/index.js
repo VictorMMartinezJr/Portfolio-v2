@@ -48,18 +48,18 @@ const Navbar = () => {
             <li>Projects</li>
           </a>
           <a
-            href="#about-section"
-            className="nav-link focus-link"
-            onClick={() => setNavOpen(false)}
-          >
-            <li>About Me</li>
-          </a>
-          <a
             href="#skills-section"
             className="nav-link focus-link"
             onClick={() => setNavOpen(false)}
           >
             <li>Skills</li>
+          </a>
+          <a
+            href="#about-section"
+            className="nav-link focus-link"
+            onClick={() => setNavOpen(false)}
+          >
+            <li>About Me</li>
           </a>
           <a
             href="#contact-section"
