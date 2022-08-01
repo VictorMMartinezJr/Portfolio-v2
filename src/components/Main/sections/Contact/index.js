@@ -621,6 +621,7 @@ const Contact = () => {
           </clipPath>
         </defs>
       </svg>
+      <p className="copyright">© Copyright 2022 | VictorMtzCodes</p>
     </section>
   );
 };

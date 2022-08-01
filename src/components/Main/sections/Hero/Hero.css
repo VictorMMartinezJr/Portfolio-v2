@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Space";
-  src: url(../../../../assets/ethnocentric\ rg\ it.otf);
+  src: url(../../../../../public/assets/ethnocentric\ rg\ it.otf);
 }
 .hero {
   position: relative;
@@ -41,7 +41,7 @@
   left: -80px;
   bottom: 40%;
 }
-.planet-purple {
+.planet-pink {
   filter: drop-shadow(0 0 20px #f4317c);
   right: -80px;
   bottom: 15%;
@@ -168,7 +168,7 @@
   .planet-earth {
     left: -40px;
   }
-  .planet-purple {
+  .planet-pink {
     height: 150px;
   }
 }
@@ -195,7 +195,7 @@
   .planet-earth {
     left: 1rem;
   }
-  .planet-purple {
+  .planet-pink {
     right: 1rem;
   }
 }
@@ -208,7 +208,7 @@
     left: 2rem;
     height: 180px;
   }
-  .planet-purple {
+  .planet-pink {
     height: 200px;
     right: 2rem;
   }
@@ -234,7 +234,7 @@
     left: 10%;
     height: 300px;
   }
-  .planet-purple {
+  .planet-pink {
     height: 350px;
     right: 2rem;
   }
@@ -259,7 +259,7 @@
   .planet-earth {
     height: 350px;
   }
-  .planet-purple {
+  .planet-pink {
     height: 400px;
   }
 }

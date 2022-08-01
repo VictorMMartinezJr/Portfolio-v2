@@ -1,7 +1,4 @@
 import "./Hero.css";
-import planetGreen from "../../../../assets/planet-green.svg";
-import planetEarth from "../../../../assets/planet-earth.svg";
-import planetPurple from "../../../../assets/planet-purple.svg";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -87,21 +84,21 @@ const Hero = ({ reducedMotion }) => {
          ** Planets & Astronaut images **
          ******************************/}
         <img
-          src={planetGreen}
+          src="./assets/planet-green.svg"
           alt="Green planet with ring"
           className="planet planet-green"
           aria-hidden="true"
         />
         <img
-          src={planetEarth}
+          src="./assets/planet-earth.svg"
           alt="Planet earth"
           className="planet planet-earth"
           aria-hidden="true"
         />
         <img
-          src={planetPurple}
-          alt="Purple planet with a ring"
-          className="planet planet-purple"
+          src="./assets/planet-pink.svg"
+          alt="Pink planet with a ring"
+          className="planet planet-pink"
           aria-hidden="true"
         />
         {/**************************
