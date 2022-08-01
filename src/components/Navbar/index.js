@@ -44,6 +44,7 @@ const Navbar = () => {
           <a
             href="#projects-section"
             className="nav-link focus-link"
+            aria-label="Projects section"
             onClick={() => setNavOpen(false)}
           >
             <li>Projects</li>
@@ -51,6 +52,7 @@ const Navbar = () => {
           <a
             href="#skills-section"
             className="nav-link focus-link"
+            aria-label="Skills section"
             onClick={() => setNavOpen(false)}
           >
             <li>Skills</li>
@@ -58,6 +60,7 @@ const Navbar = () => {
           <a
             href="#about-section"
             className="nav-link focus-link"
+            aria-label="About me section"
             onClick={() => setNavOpen(false)}
           >
             <li>About Me</li>
@@ -65,6 +68,7 @@ const Navbar = () => {
           <a
             href="#contact-section"
             className="nav-link contact-link main-btn focus-link"
+            aria-label="Contact me"
             onClick={() => setNavOpen(false)}
           >
             <li>Contact</li>

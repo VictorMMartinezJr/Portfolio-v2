@@ -68,10 +68,18 @@ const Hero = ({ reducedMotion }) => {
          **  Buttons  **
          ****************/}
         <div className="hero-btns" ref={heroBtns}>
-          <a href="#projects-section" className="main-btn focus-link">
+          <a
+            href="#projects-section"
+            aria-label="Continue to projects section"
+            className="main-btn focus-link"
+          >
             Continue
           </a>
-          <a href="#contact" className="main-btn focus-link secondary-btn">
+          <a
+            href="#contact"
+            aria-label="Contact me"
+            className="main-btn focus-link secondary-btn"
+          >
             Contact
           </a>
         </div>

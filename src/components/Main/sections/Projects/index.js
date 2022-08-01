@@ -11,7 +11,12 @@ const Projects = () => {
   };
   return (
     <section className="section" id="projects-section">
-      <h2 className="section-title projects-section__h2">Projects</h2>
+      <h2
+        className="section-title projects-section__h2"
+        aria-label="Projects Section"
+      >
+        Projects
+      </h2>
       <div className="projects container">
         {projectData.slice(0, loadNum).map((project, id) => {
           return (

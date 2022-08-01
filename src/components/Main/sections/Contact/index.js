@@ -222,6 +222,7 @@ const Contact = () => {
           href="https://github.com/VictorMtzCode"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="My github"
           className="contact-social"
         >
           <AiFillGithub />
@@ -230,6 +231,7 @@ const Contact = () => {
           href="https://www.linkedin.com/in/victormartinezjr/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="My LinkedIn"
           className="contact-social"
         >
           <AiFillLinkedin />
@@ -238,6 +240,7 @@ const Contact = () => {
           href="mailto:victormtzcodes@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Email me"
           className="contact-social"
         >
           <AiOutlineMail />

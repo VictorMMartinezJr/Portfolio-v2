@@ -29,6 +29,7 @@ const ProjectCard = ({ title, techStack, info, image, alt, live, github }) => {
           href={live}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`${title} live site`}
           className="project-link"
         >
           <FiExternalLink />
@@ -37,6 +38,7 @@ const ProjectCard = ({ title, techStack, info, image, alt, live, github }) => {
           href={github}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`${title} github`}
           className="project-link"
         >
           <AiFillGithub />
