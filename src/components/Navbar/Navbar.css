@@ -3,7 +3,7 @@
   src: url(../../../public/assets/ethnocentric\ rg\ it.otf);
 }
 
-.navbar {
+#navbar {
   font-family: "Source Sans Pro", sans-serif;
   height: 10vh;
   width: 100%;
@@ -111,7 +111,7 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .navbar {
+  #navbar {
     padding: 0 4rem;
   }
   .name {
@@ -140,7 +140,7 @@
   }
 }
 @media screen and (min-width: 1536px) {
-  .navbar {
+  #navbar {
     padding: 0;
     width: 70%;
   }

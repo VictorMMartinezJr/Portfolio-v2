@@ -5,7 +5,7 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <nav className="navbar container">
+    <nav className="container" id="navbar">
       {/****************
        ** Logo & Name **
        ****************/}

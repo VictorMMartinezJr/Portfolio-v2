@@ -127,7 +127,31 @@
 .form-error.active {
   display: inline-block;
 }
-/**** Copyright ****/
+/**** Footer ****/
+#footer {
+  text-align: center;
+}
+#footer-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-navbar-link {
+  list-style: none;
+  color: var(--white);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.footer-navbar-link:nth-child(3) {
+  margin-bottom: 1rem;
+}
 .copyright {
   color: var(--white);
   margin: 1rem 0;
@@ -190,6 +214,17 @@
   .contact-socials {
     width: 300px;
   }
+  .footer-links {
+    flex-direction: row;
+    margin: 1rem 0;
+  }
+  .footer-navbar-link {
+    margin: 0rem 1rem;
+    font-size: 1.2rem;
+  }
+  .footer-navbar-link:nth-child(3) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1280px) {
   .contact-rocket {
@@ -197,7 +232,7 @@
     position: absolute;
     height: 950px;
     right: -400px;
-    bottom: -50%;
+    bottom: -40%;
   }
   @media (prefers-reduced-motion: no-preference) {
     /***************
@@ -224,6 +259,10 @@
 }
 @media screen and (min-width: 1536px) {
   .contact-rocket {
+    height: 1000px;
     right: -300px;
+  }
+  .footer-navbar-link {
+    font-size: 1.3rem;
   }
 }

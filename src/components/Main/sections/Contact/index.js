@@ -685,7 +685,21 @@ const Contact = () => {
           </clipPath>
         </defs>
       </svg>
-      <p className="copyright">© Copyright 2022 | VictorMtzCodes</p>
+      {/***********
+       ** Footer **
+       **********/}
+      <footer id="footer">
+        {/* Secondary nav */}
+        <nav id="footer-navbar" aria-label="Secondary navigation">
+          <ul className="footer-links">
+            <li className="footer-navbar-link">Projects</li>
+            <li className="footer-navbar-link">Skills</li>
+            <li className="footer-navbar-link">About Me</li>
+          </ul>
+        </nav>
+        {/* Copyright */}
+        <p className="copyright">© Copyright 2022 | VictorMtzCodes</p>
+      </footer>
     </section>
   );
 };
