@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Portfolio-v2/static/css/main.aea6f028.css",
+    "main.js": "/Portfolio-v2/static/js/main.c1cce58b.js",
+    "static/media/ethnocentric rg it.otf": "/Portfolio-v2/static/media/ethnocentric rg it.4d9e22bac4fc45acfb99.otf",
+    "index.html": "/Portfolio-v2/index.html",
+    "main.aea6f028.css.map": "/Portfolio-v2/static/css/main.aea6f028.css.map",
+    "main.c1cce58b.js.map": "/Portfolio-v2/static/js/main.c1cce58b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aea6f028.css",
+    "static/js/main.c1cce58b.js"
+  ]
+}
