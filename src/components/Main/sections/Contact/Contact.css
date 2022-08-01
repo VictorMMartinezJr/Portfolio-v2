@@ -9,6 +9,10 @@
 }
 .contact-h2 {
   color: var(--white);
+  transition: opacity 0.5s ease-in-out;
+}
+.contact-h2.success {
+  opacity: 0;
 }
 /**** Form ****/
 #contact-form {
@@ -18,6 +22,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+}
+#contact-form.success {
+  opacity: 0;
 }
 .contact-container {
   flex-direction: column;
@@ -88,6 +97,10 @@
   height: 50px;
   width: 50px;
 }
+.contact-social:hover {
+  box-shadow: 0 0 30px var(--pink);
+  transition: all 0.2s ease-in-out;
+}
 .contact-social-img {
   height: 2rem;
 }
@@ -106,11 +119,46 @@
 .error.active {
   opacity: 1;
 }
+.form-error {
+  color: var(--pink);
+  font-weight: 700;
+  display: none;
+}
+.form-error.active {
+  display: inline-block;
+}
 /**** Copyright ****/
 .copyright {
   color: var(--white);
   margin: 1rem 0;
   font-size: 0.8rem;
+}
+
+/**** Success message ****/
+.success-message {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  /* transition-delay: 0.5s; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.success-message.success {
+  opacity: 1;
+}
+.success-text {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+.success-img {
+  height: 200px;
 }
 /**** Media Queries ****/
 @media screen and (min-width: 500px) {
@@ -127,6 +175,12 @@
   }
   .input-label.active {
     transform: translateY(-50px);
+  }
+  .success-text {
+    font-size: 2.5rem;
+  }
+  .success-img {
+    height: 250px;
   }
 }
 @media screen and (min-width: 1024px) {

@@ -1,5 +1,5 @@
 import "./Contact.css";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
@@ -9,9 +9,16 @@ const Contact = () => {
   const [emailError, setEmailError] = useState(false);
   const [nameError, setNameError] = useState(false);
   const [messageError, setMessageError] = useState(false);
+  const [formError, setFormError] = useState("");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+
+  const chatRef = useRef(null);
+  const formRef = useRef(null);
+  const successRef = useRef(null);
 
   ////////////////////////////////////////////////////////////////////////////
   // Placeholder doesn't go back inside input if value exists inside of it  //
@@ -56,20 +63,24 @@ const Contact = () => {
   ////////////////////////////////
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSending(true);
 
     // Validate Email
     if (!validateEmail(email)) {
       setEmailError(true);
+      setSending(false);
       return;
     }
     // Validate Name
     if (!validateTextInputs(name)) {
       setNameError(true);
+      setSending(false);
       return;
     }
     // Validate Message
     if (!validateTextInputs(message)) {
       setMessageError(true);
+      setSending(false);
       return;
     }
 
@@ -83,13 +94,49 @@ const Contact = () => {
         message: message,
       }),
     })
-      .then(() => console.log("Form submission successful."))
-      .catch((error) => console.log("There was an error submitting form."));
+      .then(() => {
+        setSent(true);
+        ////////////////////////////////////////////
+        // Remove Success classes after 2 seconds //
+        ////////////////////////////////////////////
+        setTimeout(() => {
+          setSending(false);
+          successRef.current.classList.remove("success");
+          chatRef.current.classList.remove("success");
+          formRef.current.classList.remove("success");
+        }, 2000);
+
+        if (formError) setFormError(false);
+      })
+      .catch((err) => {
+        formError(err);
+        setFormError(true);
+      });
   };
 
   return (
     <section className="section" id="contact-section">
-      <h2 className="section-title contact-h2">Lets Chat!</h2>
+      <h2
+        className={`section-title contact-h2 ${sent ? "success" : ""}`}
+        ref={chatRef}
+      >
+        Lets Chat!
+      </h2>
+      {/************************************
+       ** Shows on successful form submit **
+       ************************************/}
+      <div
+        className={`success-message ${sent ? "success" : ""}`}
+        ref={successRef}
+      >
+        <p className="success-text section-title">Talk to you soon!</p>
+        <img
+          src="./assets/success-img.svg"
+          alt=""
+          aria-hidden="true"
+          className="success-img"
+        />
+      </div>
       {/*********
        ** Form **
        ********/}
@@ -99,7 +146,8 @@ const Contact = () => {
         method="post"
         data-netlify="true"
         id="contact-form"
-        className="container"
+        className={`container ${sent ? "success" : ""}`}
+        ref={formRef}
       >
         <input type="hidden" name="form-name" value="contact" />
 
@@ -209,43 +257,59 @@ const Contact = () => {
             Message cannot be empty
           </p>
         </div>
+        {/***************
+         ** Form error **
+         **************/}
+        <p className={`form-error ${formError ? "active" : ""}`}>{formError}</p>
+        {/*************
+         ** Form btn **
+         ************/}
         <button
-          className="contact-btn main-btn"
+          className="contact-btn main-btn success"
           type="submit"
           onClick={(e) => handleSubmit(e)}
         >
-          Submit
+          {sending ? "Sending.." : "Submit"}
         </button>
       </form>
-      <div className="contact-socials">
+      {/********************
+       ** Contact socials **
+       *******************/}
+      <ul className="contact-socials">
+        {/* GitHub */}
         <a
           href="https://github.com/VictorMtzCode"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="My github"
-          className="contact-social"
         >
-          <AiFillGithub />
+          <li className="contact-social">
+            <AiFillGithub />
+          </li>
         </a>
+        {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/victormartinezjr/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="My LinkedIn"
-          className="contact-social"
         >
-          <AiFillLinkedin />
+          <li className="contact-social">
+            <AiFillLinkedin />
+          </li>
         </a>
+        {/* Email */}
         <a
           href="mailto:victormtzcodes@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Email me"
-          className="contact-social"
         >
-          <AiOutlineMail />
+          <li className="contact-social">
+            <AiOutlineMail />
+          </li>
         </a>
-      </div>
+      </ul>
       {/***************
        ** Rocket SVG **
        ***************/}
@@ -256,7 +320,7 @@ const Contact = () => {
         aria-hidden="true"
         className="contact-rocket"
       >
-        <g clip-path="url(#clip0_233_93)">
+        <g clipPath="url(#clip0_233_93)">
           <g id="Layer_5">
             <g id="Group">
               <g id="Group_2">
@@ -580,8 +644,8 @@ const Contact = () => {
             y2="487.629"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#CFCFCF" />
-            <stop offset="1" stop-color="#ADADAD" />
+            <stop stopColor="#CFCFCF" />
+            <stop offset="1" stopColor="#ADADAD" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_233_93"
@@ -591,8 +655,8 @@ const Contact = () => {
             y2="601.929"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#E0E0E0" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="#E0E0E0" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_233_93"
@@ -602,8 +666,8 @@ const Contact = () => {
             y2="231.2"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_233_93"
@@ -613,8 +677,8 @@ const Contact = () => {
             y2="251.253"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <clipPath id="clip0_233_93">
             <rect width="1000.47" height="1000.47" fill="white" />
