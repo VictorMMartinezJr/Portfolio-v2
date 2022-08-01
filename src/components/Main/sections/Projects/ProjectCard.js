@@ -18,7 +18,12 @@ const ProjectCard = ({ title, techStack, info, image, alt, live, github }) => {
         </div>
         <p className="project-description block-of-text">{info}</p>
       </div>
-      <img src={image} alt={alt} className="project-card-img" />
+      <img
+        src={image}
+        alt={alt}
+        className="project-card-img"
+        aria-hidden="true"
+      />
       <div className="project-links">
         <a
           href={live}

@@ -50,11 +50,15 @@ const Skills = ({ reducedMotion }) => {
             );
           })}
         </div>
+        {/**************************
+         **     Astronaut SVG     **
+         *************************/}
         <svg
           viewBox="0 0 2848 3316"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="skills-astronaut"
+          aria-hidden="true"
         >
           <g>
             <g id="Layer_1-2">
@@ -890,13 +894,6 @@ const Skills = ({ reducedMotion }) => {
             </g>
           </g>
         </svg>
-
-        {/* 
-        <img
-          src="assets/skills-assets/astronaut-skills.svg"
-          alt=""
-          className="skills-astronaut"
-        /> */}
       </div>
     </section>
   );

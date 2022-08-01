@@ -24,17 +24,17 @@ const Contact = () => {
     }
   };
 
-  //////////////////////
-  // Validate email  //
-  ////////////////////
+  /////////////////////
+  // Validate email //
+  ///////////////////
   const validateEmail = (email) => {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
   };
 
-  /////////////////////////////
-  // Validate text inputs  //
-  ////////////////////////////
+  ///////////////////////////
+  // Validate text inputs //
+  //////////////////////////
   const validateTextInputs = (text) => {
     if (text === "") {
       return false;
@@ -51,9 +51,9 @@ const Contact = () => {
       .join("&");
   };
 
-  ///////////////////////////////////
-  // Runs when form is submitted  //
   //////////////////////////////////
+  // Runs when form is submitted //
+  ////////////////////////////////
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -90,9 +90,9 @@ const Contact = () => {
   return (
     <section className="section" id="contact-section">
       <h2 className="section-title contact-h2">Lets Chat!</h2>
-      {/****************
-       **     Form    **
-       ****************/}
+      {/*********
+       ** Form **
+       ********/}
       <form
         action="/contact"
         name="contact"
@@ -243,14 +243,15 @@ const Contact = () => {
           <AiOutlineMail />
         </a>
       </div>
-      {/************************************************
-       ******************    SVG     ******************
-       ************************************************/}
+      {/***************
+       ** Rocket SVG **
+       ***************/}
       <svg
         viewBox="0 0 2174 1242"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="contact-rocket"
+        aria-hidden="true"
       >
         <g id="smoke" clipPath="url(#clip0_218_2)">
           <path

@@ -15,6 +15,7 @@ const Navbar = () => {
             src="./assets/nav-astronaut.svg"
             alt="Astronaut working on a computer"
             className="navbar-logo"
+            aria-hidden="true"
           />
           <p className="name">VictorMtzCodes</p>
           {/****************

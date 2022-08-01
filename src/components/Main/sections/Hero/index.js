@@ -82,16 +82,19 @@ const Hero = ({ reducedMotion }) => {
           src={planetGreen}
           alt="Green planet with ring"
           className="planet planet-green"
+          aria-hidden="true"
         />
         <img
           src={planetEarth}
           alt="Planet earth"
           className="planet planet-earth"
+          aria-hidden="true"
         />
         <img
           src={planetPurple}
           alt="Purple planet with a ring"
           className="planet planet-purple"
+          aria-hidden="true"
         />
         {/**************************
          **     Astronaut SVG     **
@@ -103,6 +106,7 @@ const Hero = ({ reducedMotion }) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="hero-astronaut"
+          aria-hidden="true"
         >
           <g>
             <g id="planet-orange">

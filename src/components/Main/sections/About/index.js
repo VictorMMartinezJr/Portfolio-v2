@@ -24,6 +24,7 @@ const About = () => {
           src="assets/astronaut-about.svg"
           alt="An astronaut reading an HTML book with a pile of books next to him"
           className="about-img"
+          aria-hidden="true"
         />
       </div>
     </section>
