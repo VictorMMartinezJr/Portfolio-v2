@@ -2,7 +2,7 @@
   background-color: var(--main-bg);
   position: relative;
   overflow: hidden;
-  min-height: 70vh;
+  min-height: auto;
 }
 .contact-rocket {
   display: none;
@@ -133,15 +133,12 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  #contact-section {
-    min-height: 90vh;
-  }
   .contact-rocket {
     display: inline-block;
     position: absolute;
-    width: 115%;
-    right: -180px;
-    bottom: -15%;
+    height: 950px;
+    right: -400px;
+    bottom: -50%;
   }
   @media (prefers-reduced-motion: no-preference) {
     /***************
@@ -168,6 +165,6 @@
 }
 @media screen and (min-width: 1536px) {
   .contact-rocket {
-    bottom: -28%;
+    right: -300px;
   }
 }
