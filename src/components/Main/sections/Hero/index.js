@@ -73,7 +73,7 @@ const Hero = ({ reducedMotion }) => {
             Continue
           </a>
           <a
-            href="#contact"
+            href="#contact-section"
             aria-label="Contact me"
             className="main-btn focus-link secondary-btn"
           >
