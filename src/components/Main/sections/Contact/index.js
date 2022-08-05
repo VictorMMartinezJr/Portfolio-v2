@@ -695,9 +695,27 @@ const Contact = () => {
         {/* Secondary nav */}
         <nav id="footer-navbar" aria-label="Secondary navigation">
           <ul className="footer-links">
-            <li className="footer-navbar-link">Projects</li>
-            <li className="footer-navbar-link">Skills</li>
-            <li className="footer-navbar-link">About Me</li>
+            <a
+              href="#projects-section"
+              className="focus-link"
+              aria-label="Projects section"
+            >
+              <li className="footer-navbar-link">Projects</li>
+            </a>
+            <a
+              href="#skills-section"
+              className="focus-link"
+              aria-label="Skills section"
+            >
+              <li className="footer-navbar-link">Skills</li>
+            </a>
+            <a
+              href="#about-section"
+              className="focus-link"
+              aria-label="About me section"
+            >
+              <li className="footer-navbar-link">About Me</li>
+            </a>
           </ul>
         </nav>
         {/* Copyright */}
