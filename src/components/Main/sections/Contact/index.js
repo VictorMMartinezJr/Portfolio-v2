@@ -96,6 +96,9 @@ const Contact = () => {
     })
       .then(() => {
         setSent(true);
+        setEmail("");
+        setName("");
+        setMessage("");
         ////////////////////////////////////////////
         // Remove Success classes after 2 seconds //
         ////////////////////////////////////////////
