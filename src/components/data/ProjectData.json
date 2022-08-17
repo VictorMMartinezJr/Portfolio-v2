@@ -50,6 +50,16 @@
     "github": "https://github.com/VictorMtzCode/Deep-Reef"
   },
   {
+    "id": 8,
+    "title": "Tesla Clone",
+    "techStack": ["HTML", "CSS", "JavaScript", "Intersection Observer API"],
+    "description": "A Tesla clone landing page I created by eyeballing the original Tesla website. Created with HTML CSS & JavaScript",
+    "img": "assets/project-assets/tesla-clone.png",
+    "alt": "desktop and iPhone next to each other with my Tesla clone webpage open",
+    "liveSite": "https://teslaclone-victormtzcodes.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Tesla-Clone"
+  },
+  {
     "id": 6,
     "title": "Cake O' Clock",
     "techStack": ["HTML", "JavaScript", "React", "TailwindCSS"],
