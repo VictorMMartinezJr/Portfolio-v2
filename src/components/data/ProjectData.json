@@ -40,16 +40,6 @@
     "github": "https://github.com/VictorMtzCode/Pizzeria-Landing"
   },
   {
-    "id": 5,
-    "title": "Deep Reef",
-    "techStack": ["HTML", "JavaScript", "React", "TailwindCSS"],
-    "description": "A landing page for a company investing in the stock market. I used this project to brush up on my TailwindCSS skills.",
-    "img": "assets/project-assets/deep-reef.png",
-    "alt": "desktop and iPhone next to each other with the Deep Reef webpage open",
-    "liveSite": "https://deepreef.netlify.app/",
-    "github": "https://github.com/VictorMtzCode/Deep-Reef"
-  },
-  {
     "id": 8,
     "title": "Tesla Clone",
     "techStack": ["HTML", "CSS", "JavaScript", "Intersection Observer API"],
@@ -58,6 +48,26 @@
     "alt": "desktop and iPhone next to each other with my Tesla clone webpage open",
     "liveSite": "https://teslaclone-victormtzcodes.netlify.app/",
     "github": "https://github.com/VictorMtzCode/Tesla-Clone"
+  },
+  {
+    "id": 12,
+    "title": "Tic Tac Toe",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "description": "A game of Tic Tac Toe built with vanilla JavaScript. Key concepts covered include Arrays & Event listeners",
+    "img": "assets/project-assets/tic-tac-toe.png",
+    "alt": "desktop and iPhone next to each other with my tic tac toe app open",
+    "liveSite": "https://tictactoe-victormtzcodes.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/TicTacToe"
+  },
+  {
+    "id": 5,
+    "title": "Deep Reef",
+    "techStack": ["HTML", "JavaScript", "React", "TailwindCSS"],
+    "description": "A landing page for a company investing in the stock market. I used this project to brush up on my TailwindCSS skills.",
+    "img": "assets/project-assets/deep-reef.png",
+    "alt": "desktop and iPhone next to each other with the Deep Reef webpage open",
+    "liveSite": "https://deepreef.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Deep-Reef"
   },
   {
     "id": 6,
@@ -78,5 +88,55 @@
     "alt": "desktop and iPhone next to each other with the ZA Sport webpage open",
     "liveSite": "https://zasport.netlify.app/",
     "github": "https://github.com/VictorMtzCode/Fitness-Landing-Page"
+  },
+  {
+    "id": 13,
+    "title": "Tip Calculator",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "description": "Tip Calculator challenge from Frontend Mentor. Users are able to View the optimal layout for the app depending on their device's screen size, See hover states for all interactive elements on the page, Calculate the correct tip and total cost of the bill per person",
+    "img": "assets/project-assets/tip-calculator.png",
+    "alt": "desktop and iPhone next to each other with my tip calculator webpage open",
+    "liveSite": "https://tipcalculator-victormtzcodes.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Tip-Calculator-App"
+  },
+  {
+    "id": 14,
+    "title": "Advice Generator App",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "description": "Advice Generator App challenge from Frontend Mentor. Built using the Advice Slip API, users are able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, & generate a new piece of advice by clicking the dice icon",
+    "img": "assets/project-assets/advice-generator.png",
+    "alt": "desktop and iPhone next to each other with my tip calculator webpage open",
+    "liveSite": "https://advice-generator-victormtzcodes.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Tip-Calculator-App"
+  },
+  {
+    "id": 9,
+    "title": "QR code component",
+    "techStack": ["HTML", "CSS"],
+    "description": "A FrontendMentor challenge built with HTML and CSS. The challenge was to build out the QR Code Component and get it looking as close to the design as possible.",
+    "img": "assets/project-assets/QRCode-component.png",
+    "alt": "desktop and iPhone next to each other with my QR code webpage open",
+    "liveSite": "https://qrcodevictormtzcodes.netlify.app/",
+    "github": "https://github.com/My-FrontEndMentor-Challenges/QR-Code-Component"
+  },
+  {
+    "id": 10,
+    "title": "NFT Preview Card",
+    "techStack": ["HTML", "CSS"],
+    "description": "A FrontendMentor challenge built with HTML and CSS. The challenge was to build out the NFT Preview Card and get it looking as close to the design as possible.",
+    "img": "assets/project-assets/nft-card.png",
+    "alt": "desktop and iPhone next to each other with my NFT card webpage open",
+    "liveSite": "https://nftcard-victormtzcodes.netlify.app/",
+    "github": "https://github.com/My-FrontEndMentor-Challenges/NFT-preview-card"
+  },
+  {
+    "id": 11,
+    "title": "Order Summary Card",
+    "techStack": ["HTML", "CSS"],
+    "description": "A FrontendMentor challenge built with HTML and CSS. The challenge was to build out the Order Summary Card and get it looking as close to the design as possible.",
+    "img": "assets/project-assets/order-summary.png",
+    "alt": "desktop and iPhone next to each other with my order summary card webpage open",
+    "liveSite": "https://ordersummary-victormtzcodes.netlify.app/",
+    "github": "https://github.com/My-FrontEndMentor-Challenges/Order-summary-component"
   }
 ]

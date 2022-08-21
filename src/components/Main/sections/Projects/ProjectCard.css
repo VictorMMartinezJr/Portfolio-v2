@@ -15,8 +15,10 @@
 .tech-stack {
   margin: 1rem 0;
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
+  min-height: 90px;
 }
 .tech {
   margin: 1rem 1rem 0 0;
@@ -45,7 +47,7 @@
 @media screen and (min-width: 768px) {
   .project-card {
     width: 300px;
-    min-height: 550px;
+    height: 575px;
   }
   .tech-stack {
     margin: 0 0 1rem 0;
