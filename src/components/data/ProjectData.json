@@ -80,6 +80,16 @@
     "github": "https://github.com/VictorMtzCode/Cake-O-Clock"
   },
   {
+    "id": 15,
+    "title": "Stopwatch",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "description": "A stopwatch that can be started, paused, and reset built with vanilla JavaScript",
+    "img": "assets/project-assets/stopwatch.png",
+    "alt": "desktop and iPhone next to each other with the stopwatch webpapp open",
+    "liveSite": "https://stopwatch-victormtzcodes.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Stopwatch"
+  },
+  {
     "id": 7,
     "title": "ZA Sport",
     "techStack": ["HTML", "JavaScript", "React", "TailwindCSS"],
@@ -88,6 +98,26 @@
     "alt": "desktop and iPhone next to each other with the ZA Sport webpage open",
     "liveSite": "https://zasport.netlify.app/",
     "github": "https://github.com/VictorMtzCode/Fitness-Landing-Page"
+  },
+  {
+    "id": 16,
+    "title": "Dropdown Navigation",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "description": "Dropdown Navigation challenge from Frontend Mentor. The challenge was to test my ability to create a dropdown nav menu, and allow users to view the relevant dropdown menus on desktop and mobile when interacting with the navigation links.",
+    "img": "assets/project-assets/dropdown-nav.png",
+    "alt": "desktop and iPhone next to each other with my Intro Section webpage open",
+    "liveSite": "https://introdropdown-victormtzcodes.netlify.app/",
+    "github": "https://github.com/My-FrontEndMentor-Challenges/IntroSection-Dropdown"
+  },
+  {
+    "id": 17,
+    "title": "Ping Coming Soon Page",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "description": "Ping Coming Soon Page challenge from Frontend Mentor. The challenge was to get the design looking as close as possible and allow users to submit their email using an input field. They should recieve an error if the form is submitted empty or with an invalid email",
+    "img": "assets/project-assets/ping-comingsoon.png",
+    "alt": "desktop and iPhone next to each other with my Ping Coming Soon webpage open",
+    "liveSite": "https://pingcomingsoon-victormtzcodes.netlify.app/",
+    "github": "https://github.com/My-FrontEndMentor-Challenges/Ping-ComingSoon-Page"
   },
   {
     "id": 13,
