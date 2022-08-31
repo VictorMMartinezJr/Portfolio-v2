@@ -50,6 +50,16 @@
     "github": "https://github.com/VictorMtzCode/Tesla-Clone"
   },
   {
+    "id": 18,
+    "title": "RPS",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "description": "Rock paper Scissors game challenge from Frontend Mentor. Users can play against the computer and view a rules pop up modal.",
+    "img": "assets/project-assets/rps.png",
+    "alt": "desktop and iPhone next to each other with my rps webapp open",
+    "liveSite": "https://rps-victormtzcodes.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Rock-Paper-Scissors"
+  },
+  {
     "id": 12,
     "title": "Tic Tac Toe",
     "techStack": ["HTML", "CSS", "JavaScript"],
