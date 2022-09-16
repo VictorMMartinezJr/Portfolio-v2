@@ -40,6 +40,16 @@
     "github": "https://github.com/VictorMtzCode/Pizzeria-Landing"
   },
   {
+    "id": 19,
+    "title": "Weather App",
+    "techStack": ["JavaScript", "React", "Rest API", "OpenWeather API"],
+    "description": "A weather app built using the OpenWeather API. Users can search for the current weather of a city as well as the 3 day forecast.",
+    "img": "assets/project-assets/weather-app.png",
+    "alt": "desktop and iPhone next to each other with https://weatherapp-victormtzcodes.netlify.app/ webapp open",
+    "liveSite": "https://weatherapp-victormtzcodes.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/OpenWeather-App"
+  },
+  {
     "id": 8,
     "title": "Tesla Clone",
     "techStack": ["HTML", "CSS", "JavaScript", "Intersection Observer API"],
