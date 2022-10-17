@@ -80,6 +80,26 @@
     "github": "https://github.com/VictorMtzCode/TicTacToe"
   },
   {
+    "id": 20,
+    "title": "Interactive Price Comp",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "description": "An Interactive Pricing Component complete with custom range input slider and pricing toggle. Yearly toggle and input change update the UI accordingly",
+    "img": "assets/project-assets/interactive-price.png",
+    "alt": "desktop and iPhone next to each other with interactiveprice-victormtzcodes.netlify.app open",
+    "liveSite": "https://interactiveprice-victormtzcodes.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Interactive-pricing-component"
+  },
+  {
+    "id": 21,
+    "title": "Sunnyside Agency",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "description": "A website for an agency with assets provided from FrontendMentor",
+    "img": "assets/project-assets/sunnyside-agency.png",
+    "alt": "desktop and iPhone next to each other with sunnysideagency-victormtzcodes.netlify.app open",
+    "liveSite": "https://sunnysideagency-victormtzcodes.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Sunnyside-Agency"
+  },
+  {
     "id": 5,
     "title": "Deep Reef",
     "techStack": ["HTML", "JavaScript", "React", "TailwindCSS"],
