@@ -2,12 +2,12 @@
   {
     "id": 1,
     "title": "Anime Attire",
-    "techStack": ["HTML", "CSS", "JavaScript", "React"],
-    "description": "A web app built with ReactJs for an anime store. With the power of the Context API + useReducer hook, users can view, search, sort, and add/remove items from their cart.",
-    "img": "assets/project-assets/anime-attire.png",
+    "techStack": ["HTML", "CSS", "JavaScript", "React", "Redux"],
+    "description": "A web app built with ReactJs for an anime store. With the power of Redux-Toolkit, users can view, search, filter, and add/remove items from their cart.",
+    "img": "assets/project-assets/animeattire.png",
     "alt": "desktop and iPhone next to each other with the Anime Attire webpage open",
-    "liveSite": "https://anime-attire.netlify.app/",
-    "github": "https://github.com/VictorMtzCode/Anime-Shoppe"
+    "liveSite": "https://animeattire.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Anime-Attire"
   },
   {
     "id": 2,
