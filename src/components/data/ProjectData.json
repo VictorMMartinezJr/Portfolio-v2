@@ -50,14 +50,14 @@
     "github": "https://github.com/VictorMtzCode/OpenWeather-App"
   },
   {
-    "id": 8,
-    "title": "Tesla Clone",
-    "techStack": ["HTML", "CSS", "JavaScript", "Intersection Observer API"],
-    "description": "A Tesla clone landing page I created by eyeballing the original Tesla website. Created with HTML CSS & JavaScript",
-    "img": "assets/project-assets/tesla-clone.png",
-    "alt": "desktop and iPhone next to each other with my Tesla clone webpage open",
-    "liveSite": "https://teslaclone-victormtzcodes.netlify.app/",
-    "github": "https://github.com/VictorMtzCode/Tesla-Clone"
+    "id": 22,
+    "title": "Easybank Agency",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "description": "A landing page created for a digital banking agency.",
+    "img": "assets/project-assets/easybank.png",
+    "alt": "desktop and iPhone next to each other with easybank-digital-landing.netlify.app open",
+    "liveSite": "https://easybank-digital-landing.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Easybank"
   },
   {
     "id": 18,
@@ -78,6 +78,16 @@
     "alt": "desktop and iPhone next to each other with my tic tac toe app open",
     "liveSite": "https://tictactoe-victormtzcodes.netlify.app/",
     "github": "https://github.com/VictorMtzCode/TicTacToe"
+  },
+  {
+    "id": 8,
+    "title": "Tesla Clone",
+    "techStack": ["HTML", "CSS", "JavaScript", "Intersection Observer API"],
+    "description": "A Tesla clone landing page I created by eyeballing the original Tesla website. Created with HTML CSS & JavaScript",
+    "img": "assets/project-assets/tesla-clone.png",
+    "alt": "desktop and iPhone next to each other with my Tesla clone webpage open",
+    "liveSite": "https://teslaclone-victormtzcodes.netlify.app/",
+    "github": "https://github.com/VictorMtzCode/Tesla-Clone"
   },
   {
     "id": 20,
