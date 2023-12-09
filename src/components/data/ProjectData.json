@@ -20,16 +20,6 @@
     "github": "https://github.com/VictorMtzCode/streamvic"
   },
   {
-    "id": 3,
-    "title": "Chit Chat",
-    "techStack": ["MongoDB", "Express", "React", "NodeJS"],
-    "description": "A web app built using the MERN stack that allows users to create/edit groupchats & single chats, send messages, search for users, and uses JWT tokens as authentication for logging in and signing up.",
-    "img": "assets/project-assets/chitchat.png",
-    "alt": "desktop on Chit Chat with chat open and an iPhone on Chit Chat with the signup page open",
-    "liveSite": "https://chit-chat-victormtzcodes.herokuapp.com/",
-    "github": "https://github.com/VictorMtzCode/MERN-Chat-App"
-  },
-  {
     "id": 4,
     "title": "Italian Pie",
     "techStack": ["HTML", "CSS", "JavaScript", "GSAP", "BarbaJS"],
